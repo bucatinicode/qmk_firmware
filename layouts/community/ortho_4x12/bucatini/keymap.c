@@ -88,37 +88,37 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Instant Numpad
    * ,-----------------------------------------------------------------------------------.
-   * | TAB  |      |      |      |      |      |NUMLK |   7  |   8  |   9  |   /  |   *  |
+   * | TAB  |      |      |      |      |      |NUMLK |   7  |   8  |   9  |   /  |  BS  |
    * |------+------+------+------+------+------+------+------+------+------+------+------|
-   * | ESC  |      |      |      |      |      |      |   4  |   5  |   6  |   -  |   +  |
+   * | ESC  |      |      |      |      |      |      |   4  |   5  |   6  |   -  |   *  |
    * |------+------+------+------+------+------+------+------+------+------+------+------|
-   * |SHIFT |      |      |      |      |      |      |   1  |   2  |   3  |ENTER |  BS  |
+   * |SHIFT |      |      |      |      |      |      |   1  |   2  |   3  |   +  |ENTER |
    * |------+------+------+------+------+-------------+------+------+------+------+------|
    * | CTRL | GUI  | Alt  |      |      |    SPACE    |   0  |   =  |   .  |SW/APP| CTRL |
    * `-----------------------------------------------------------------------------------'
    */
   [KL_INSTANT_NUMPAD] =  LAYOUT_ortho_4x12(
-    KC_TAB , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_NLCK, KC_P7  , KC_P8  , KC_P9  , KC_PSLS, KC_PAST,
-    KC_ESC , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P4  , KC_P5  , KC_P6  , KC_PMNS, KC_PPLS,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P1  , KC_P2  , KC_P3  , KC_ENT , KC_BSPC,
+    KC_TAB , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_NLCK, KC_P7  , KC_P8  , KC_P9  , KC_PSLS, KC_BSPC,
+    KC_ESC , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P4  , KC_P5  , KC_P6  , KC_PMNS, KC_PAST,
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P1  , KC_P2  , KC_P3  , KC_PPLS, _______,
     _______, _______, _______, _______, _______, _______, _______, KC_P0  , KC_PEQL, KC_PDOT, _______, _______
   ),
 
   /* Numpad
    * ,-----------------------------------------------------------------------------------.
-   * | TAB  |      |      |      |      |      |NUMLK |   7  |   8  |   9  |   /  |   *  |
+   * | TAB  |      |      |      |      |      |NUMLK |   7  |   8  |   9  |   /  |  BS  |
    * |------+------+------+------+------+------+------+------+------+------+------+------|
-   * | ESC  |      |      |      |      |      |      |   4  |   5  |   6  |   -  |   +  |
+   * | ESC  |      |      |      |      |      |      |   4  |   5  |   6  |   -  |   *  |
    * |------+------+------+------+------+------+------+------+------+------+------+------|
-   * |SHIFT |      |      |      |      |      |      |   1  |   2  |   3  |ENTER |  BS  |
+   * |SHIFT |      |      |      |      |      |      |   1  |   2  |   3  |   +  |ENTER |
    * |------+------+------+------+------+-------------+------+------+------+------+------|
    * | CTRL | GUI  | Alt  |      |      |    SPACE    |   0  |   =  |   .  |SW/APP| CTRL |
    * `-----------------------------------------------------------------------------------'
    */
   [KL_NUMPAD] =  LAYOUT_ortho_4x12(
-    KC_TAB , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_NLCK, KC_P7  , KC_P8  , KC_P9  , KC_PSLS, KC_PAST,
-    KC_ESC , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P4  , KC_P5  , KC_P6  , KC_PMNS, KC_PPLS,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P1  , KC_P2  , KC_P3  , KC_ENT , KC_BSPC,
+    KC_TAB , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_NLCK, KC_P7  , KC_P8  , KC_P9  , KC_PSLS, KC_BSPC,
+    KC_ESC , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P4  , KC_P5  , KC_P6  , KC_PMNS, KC_PAST,
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P1  , KC_P2  , KC_P3  , KC_PPLS, _______,
     _______, _______, _______, XXXXXXX, XXXXXXX, _______, _______, KC_P0  , KC_PEQL, KC_PDOT, _______, _______
   ),
 
@@ -196,19 +196,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* JP Instant Numpad
    * ,-----------------------------------------------------------------------------------.
-   * | TAB  |      |      |      |      |      |NUMLK |   7  |   8  |   9  |   /  |   *  |
+   * | TAB  |      |      |      |      |      |NUMLK |   7  |   8  |   9  |   /  |  BS  |
    * |------+------+------+------+------+------+------+------+------+------+------+------|
-   * | ESC  |      |      |      |      |      |      |   4  |   5  |   6  |   -  |   +  |
+   * | ESC  |      |      |      |      |      |      |   4  |   5  |   6  |   -  |   *  |
    * |------+------+------+------+------+------+------+------+------+------+------+------|
-   * |SHIFT |      |      |      |      |      |      |   1  |   2  |   3  |ENTER |  BS  |
+   * |SHIFT |      |      |      |      |      |      |   1  |   2  |   3  |   +  |ENTER |
    * |------+------+------+------+------+-------------+------+------+------+------+------|
    * | CTRL | GUI  | Alt  |      |      |    SPACE    |   0  |   =  |   .  |SW/APP| CTRL |
    * `-----------------------------------------------------------------------------------'
    */
   [KL_JP_INSTANT_NUMPAD] =  LAYOUT_ortho_4x12(
-    KC_TAB , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_NLCK, KC_P7  , KC_P8  , KC_P9  , KC_PSLS, KC_PAST,
-    KC_ESC , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P4  , KC_P5  , KC_P6  , KC_PMNS, KC_PPLS,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P1  , KC_P2  , KC_P3  , KC_ENT , KC_BSPC,
+    KC_TAB , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_NLCK, KC_P7  , KC_P8  , KC_P9  , KC_PSLS, KC_BSPC,
+    KC_ESC , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P4  , KC_P5  , KC_P6  , KC_PMNS, KC_PAST,
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P1  , KC_P2  , KC_P3  , KC_PPLS, _______,
     _______, _______, _______, _______, _______, _______, _______, KC_P0  , KC_PEQL, KC_PDOT, _______, _______
   ),
 
@@ -268,20 +268,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* JP Instant Numpad Shift
    * ,-----------------------------------------------------------------------------------.
-   * | TAB  |      |      |      |      |      |NUMLK |   7  |   8  |   9  |   /  |   *  |
+   * | TAB  |      |      |      |      |      |NUMLK |   7  |   8  |   9  |   /  |  BS  |
    * |------+------+------+------+------+------+------+------+------+------+------+------|
-   * | ESC  |      |      |      |      |      |      |   4  |   5  |   6  |   -  |   +  |
+   * | ESC  |      |      |      |      |      |      |   4  |   5  |   6  |   -  |   *  |
    * |------+------+------+------+------+------+------+------+------+------+------+------|
-   * |SHIFT |      |      |      |      |      |      |   1  |   2  |   3  |ENTER |  BS  |
+   * |SHIFT |      |      |      |      |      |      |   1  |   2  |   3  |   +  |ENTER |
    * |------+------+------+------+------+-------------+------+------+------+------+------|
    * | CTRL | GUI  | Alt  |      |      |    SPACE    |   0  |   =  |   .  |SW/APP| CTRL |
    * `-----------------------------------------------------------------------------------'
    */
   [KL_JP_INSTANT_NUMPAD_SHIFT] =  LAYOUT_ortho_4x12(
-    S(KC_TAB) , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, S(KC_NLCK), S(KC_P7) , S(KC_P8)  , S(KC_P9)  , (KC_PSLS), S(KC_PAST),
-    S(KC_ESC) , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX   , S(KC_P4) , S(KC_P5)  , S(KC_P6)  , (KC_PMNS), S(KC_PPLS),
-    _______   , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX   , S(KC_P1) , S(KC_P2)  , S(KC_P3)  , (KC_ENT) , S(KC_BSPC),
-    _______   , _______, _______, _______, _______, _______, _______   , S(KC_P0) , S(KC_PEQL), S(KC_PDOT), _______, _______
+    S(KC_TAB) , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, S(KC_NLCK), S(KC_P7) , S(KC_P8)  , S(KC_P9)  , (KC_PSLS), S(KC_BSPC),
+    S(KC_ESC) , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX   , S(KC_P4) , S(KC_P5)  , S(KC_P6)  , (KC_PMNS), S(KC_PAST),
+    _______   , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX   , S(KC_P1) , S(KC_P2)  , S(KC_P3)  , (KC_PPLS), S(KC_ENT) ,
+    _______   , _______, _______, _______, _______, _______, _______   , S(KC_P0) , S(KC_PEQL), S(KC_PDOT), _______  , _______
   ),
 
   /* Switch
